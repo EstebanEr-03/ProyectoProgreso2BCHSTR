@@ -17,18 +17,16 @@ public partial class DetailsProducto : ContentPage
     {
         base.OnAppearing();
         _producto = BindingContext as Producto;
-        Nombre.Text = _producto.Nombre;
-        Descripcion.Text = _producto.Descripcion;
-        Cantidad.Text = _producto.Cantidad.ToString();
-        ImagenProductoURL.Text = _producto.ImagenProductoURL;
-        Precio.Text = _producto.Precio.ToString();
-        IdMarca.Text = _producto.IdMarca.ToString();
-        IdCategoria.Text = _producto.IdCategoria.ToString();
+        Nombre.Text = _producto.nombreProducto;
+        Descripcion.Text = _producto.descripcionProducto;
+        Precio.Text = _producto.precio.ToString();
+        Stock.Text = _producto.stock.ToString();
+        fechaCreacion.Text = _producto.fechaCreacion.ToString();
     }
     private async void Borrar_Clicked(object sender, EventArgs e)
     {
         //Utils.Utils.ProductosList.Remove(_producto);
-        await _APIService.DeleteProducto(_producto.IdProducto);
+        await _APIService.DeleteProducto(_producto.idProducto);
         await Navigation.PopAsync();
         /*
         // Sender contiene el objeto que disparó el evento, en este caso un botón

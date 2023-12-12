@@ -17,7 +17,7 @@ namespace BochaStoreProyecto.Maui.Services
         public APIService()
         {
 
-            _baseUrl = "http://10.0.2.2:5149/";
+            _baseUrl = "http://10.0.2.2:5149";
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = new Uri(_baseUrl);
         }

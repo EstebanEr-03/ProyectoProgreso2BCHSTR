@@ -11,16 +11,14 @@
                                Placeholder="Nombre"/>
                     <EntryCell x:Name="EntryDescripcion"
                                Placeholder="Descripción"/>
-                    <EntryCell x:Name="Entrycantidad"
-                               Placeholder="Cantidad"/>
-                    <EntryCell x:Name="EntryImagenProductoURL"
-                               Placeholder="ImagenProductoURL"/>
                     <EntryCell x:Name="EntryPrecio"
                                Placeholder="Precio"/>
-                    <EntryCell x:Name="EntryIdMarca"
-                               Placeholder="IdMarca"/>
-                    <EntryCell x:Name="EntryIdCategoria"
-                               Placeholder="IdCategoria"/>
+                    <EntryCell x:Name="Entrystock"
+                               Placeholder="Stock"/>
+                    <EntryCell x:Name="EntryidProovedor"
+                               Placeholder="idProovedor"/>
+                    <EntryCell x:Name="EntryfechaCreacion"
+                               Placeholder="fechaCreacion"/>
                 </TableSection>
             </TableRoot>
         </TableView>

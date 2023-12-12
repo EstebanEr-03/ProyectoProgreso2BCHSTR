@@ -21,13 +21,12 @@ public partial class NuevoProducto : ContentPage
         _producto = BindingContext as Producto;
         if (_producto != null)
         {
-            EntryNombre.Text = _producto.Nombre;
-            EntryDescripcion.Text = _producto.Descripcion;
-            Entrycantidad.Text = _producto.Cantidad.ToString();
-            EntryImagenProductoURL.Text = _producto.ImagenProductoURL;
-            EntryPrecio.Text = _producto.Precio.ToString();
-            EntryIdMarca.Text = _producto.IdMarca.ToString();
-            EntryIdCategoria.Text = _producto.IdCategoria.ToString();
+            EntryNombre.Text = _producto.nombreProducto;
+            EntryDescripcion.Text = _producto.descripcionProducto;
+            EntryPrecio.Text = _producto.precio.ToString();
+            Entrystock.Text = _producto.stock.ToString();
+            EntryidProovedor.Text = _producto.idProovedor.ToString();
+            EntryfechaCreacion.Text = _producto.fechaCreacion.ToString();
 
         }
     }
@@ -37,14 +36,13 @@ public partial class NuevoProducto : ContentPage
         if (_producto != null)
         {
 
-            _producto.Nombre = EntryNombre.Text;
-            _producto.Descripcion = EntryDescripcion.Text;
-            _producto.Cantidad = Int32.Parse(Entrycantidad.Text);
-            _producto.ImagenProductoURL = EntryImagenProductoURL.Text;
-            _producto.Precio = double.Parse(EntryPrecio.Text);
-            _producto.IdMarca = Int32.Parse(EntryIdMarca.Text);
-            _producto.IdCategoria = Int32.Parse(EntryIdCategoria.Text);
-            await _APIService.PutProducto(_producto.IdProducto, _producto);
+            _producto.nombreProducto = EntryNombre.Text;
+            _producto.descripcionProducto = EntryDescripcion.Text;
+            _producto.precio = double.Parse(EntryPrecio.Text);
+            _producto.stock = Int32.Parse(Entrystock.Text);
+            _producto.idProovedor = Int32.Parse(EntryidProovedor.Text);
+            _producto.fechaCreacion = DateTime.Now;
+            await _APIService.PutProducto(_producto.idProducto, _producto);
 
             /*            Producto productoNuevo = new Producto
                         {
@@ -68,14 +66,13 @@ public partial class NuevoProducto : ContentPage
 
             Producto producto = new Producto
             {
-                IdProducto = 0,
-                Nombre = EntryNombre.Text,
-                Descripcion = EntryDescripcion.Text,
-                Cantidad = Int32.Parse(Entrycantidad.Text),
-                ImagenProductoURL = EntryImagenProductoURL.Text,
-                Precio = double.Parse(EntryPrecio.Text),
-                IdMarca = Int32.Parse(EntryIdMarca.Text),
-                IdCategoria = Int32.Parse(EntryIdCategoria.Text),
+                idProducto = 0,
+                nombreProducto = EntryNombre.Text,
+                descripcionProducto = EntryDescripcion.Text,
+                precio = double.Parse(EntryPrecio.Text),
+                stock = Int32.Parse(Entrystock.Text),
+                idProovedor= Int32.Parse(EntryidProovedor.Text),
+                fechaCreacion = DateTime.Now
             };
             //Utils.Utils.ProductosList.Add(producto);
             await _APIService.PostProducto(producto);

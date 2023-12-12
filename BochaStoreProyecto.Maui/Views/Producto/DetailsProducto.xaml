@@ -19,20 +19,6 @@
                     FontSize="18"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Cantidad: "
-                    FontSize="18"/>
-            <Label x:Name="Cantidad"
-                    Text="Cantidad"
-                    FontSize="18"/>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Label Text="ImagenProductoURL: "
-                    FontSize="18"/>
-            <Label x:Name="ImagenProductoURL"
-                    Text="ImagenProductoURL"
-                    FontSize="18"/>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
             <Label Text="Precio: "
                     FontSize="18"/>
             <Label x:Name="Precio"
@@ -40,17 +26,17 @@
                     FontSize="18"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="IdMarca: "
+            <Label Text="Stock: "
                     FontSize="18"/>
-            <Label x:Name="IdMarca"
-                    Text="IdMarca"
+            <Label x:Name="Stock"
+                    Text="Stock"
                     FontSize="18"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="IdCategoria: "
+            <Label Text="fechaCreacion: "
                     FontSize="18"/>
-            <Label x:Name="IdCategoria"
-                    Text="IdCategoria"
+            <Label x:Name="fechaCreacion"
+                    Text="fechaCreacion"
                     FontSize="18"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">

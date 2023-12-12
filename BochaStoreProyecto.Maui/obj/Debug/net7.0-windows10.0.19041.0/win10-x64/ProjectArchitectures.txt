@@ -1,1 +1,1 @@
-C:\Users\esteb\OneDrive\Escritorio\Quinto Semestr\Progra IV\Progreso2\NuevoP\BochaStoreProyecto.Maui\BochaStoreProyecto.Maui\BochaStoreProyecto.Maui.csproj;x64
+C:\Users\esteb\Downloads\Proyecto\BochaStoreProyecto.Maui\BochaStoreProyecto.Maui\BochaStoreProyecto.Maui.csproj;x64
