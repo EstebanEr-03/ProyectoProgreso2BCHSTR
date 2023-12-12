@@ -6,7 +6,7 @@
     <VerticalStackLayout>
 
         <HorizontalStackLayout
-            HorizontalOptions="FillAndExpand"
+            HorizontalOptions="Fill"
             BackgroundColor="#0e0f14">
             <Image Source="logo_bochas.jpeg"
                    HeightRequest="50"
@@ -24,7 +24,7 @@
                 Clicked="OnClickNuevoProducto"
                 Margin="5"/>
         <ListView x:Name="listaProductos"
-                  RowHeight="80"
+                  RowHeight="160"
                   ItemSelected="OnClickShowDetails_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -36,13 +36,16 @@
                             <StackLayout Orientation="Vertical">
                                 <Label Text="{Binding nombreProducto}"
                                    FontSize="25"
-                                   WidthRequest="300"/>
+                                   WidthRequest="300"
+                                       />
                                 <Label Text="{Binding descripcionProducto}"
-                                   FontSize="20"/>
+                                   FontSize="20"
+                                   />
                                 <Label Text="{Binding stock}"
-                                   FontSize="20"/>
-                                <Label Text="{Binding precio}"
-                                   FontSize="20"/>
+                                   FontSize="20"
+                                   />
+                                <Label Text="{Binding precio, StringFormat='${0:F2}'}"
+                                       FontSize="20"/>
                             </StackLayout>
                         </StackLayout>
 

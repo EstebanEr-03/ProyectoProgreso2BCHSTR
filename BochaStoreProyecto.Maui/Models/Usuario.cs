@@ -8,8 +8,8 @@ namespace BochaStoreProyecto.Maui.Models
 {
     public class Usuario
     {
-        public int IdUser { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public int idUsuario { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
     }
 }

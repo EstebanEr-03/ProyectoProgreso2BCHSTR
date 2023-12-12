@@ -20,17 +20,17 @@ public partial class LoginPage : ContentPage
         string password = Password.Text;
         Usuario usuario = new Usuario
         {
-            IdUser = 0,
-            Username = username,
-            Password = password
+            idUsuario = 0,
+            username = username,
+            password = password
         };
 
         Usuario usuario2 = _APIService.PostUsuario(usuario);
         if (usuario2 != null)
         {
             Preferences.Set("username", username);
-            Preferences.Set("idusuario", usuario2.IdUser);
-            await Navigation.PushAsync(new ProductoPage(_APIService));
+            Preferences.Set("idusuario", usuario2.idUsuario);
+            await Navigation.PushAsync(new FlyoutPageT(_APIService));
         }
         else
         {

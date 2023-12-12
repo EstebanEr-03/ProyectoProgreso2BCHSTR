@@ -21,6 +21,7 @@ namespace BochaStoreProyecto.Maui.Services
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = new Uri(_baseUrl);
         }
+        // P R O D U C T O
         public async Task<bool> DeleteProducto(int IdProducto)
         {
             var response = await _httpClient.DeleteAsync($"/api/Producto/{IdProducto}");
@@ -90,20 +91,87 @@ namespace BochaStoreProyecto.Maui.Services
         {
             if (usuario != null)
             {
-                if (usuario.Username.Equals("Carlos") && usuario.Password.Equals("1234"))
+                if (usuario.username.Equals("Carlos") && usuario.password.Equals("1234"))
                 {
                     return new Usuario
                     {
                         //SOLO REGRESA ID O TOKEN
-                        IdUser = 100,
-                        Username = usuario.Username,
-                        Password = "",
+                        idUsuario = 100,
+                        username = usuario.username,
+                        password = "",
                     };
                 }
 
             }
 
             return null;
+        }
+
+        // P R O O V E D O R
+
+        public async Task<bool> DeleteProovedor(int IdProovedor)
+        {
+            var response = await _httpClient.DeleteAsync($"/api/Proovedor/{IdProovedor}");
+            if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<Proovedor> GetProovedor(int IdProovedor)
+        {
+            var response = await _httpClient.GetAsync($"/api/Proovedor/{IdProovedor}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Proovedor proovedor = JsonConvert.DeserializeObject<Proovedor>(json_response);
+                return proovedor;
+            }
+            return new Proovedor();
+        }
+
+        public async Task<List<Proovedor>> GetProovedor()
+        {
+            var response = await _httpClient.GetAsync("/api/Proovedor");
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                List<Proovedor> proovedor = JsonConvert.DeserializeObject<List<Proovedor>>(json_response);
+                return proovedor;
+            }
+            return new List<Proovedor>();
+
+        }
+
+        public async Task<Proovedor> PostProovedor(Proovedor proovedor)
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(proovedor), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("/api/Proovedor/", content);
+            //Debug.WriteLine(content);
+            //Debug.WriteLine(response);
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Proovedor proovedor2 = JsonConvert.DeserializeObject<Proovedor>(json_response);
+                return proovedor2;
+            }
+            return new Proovedor();
+        }
+
+        public async Task<Proovedor> PutProovedor(int IdProovedor, Proovedor proovedor)
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(proovedor), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync($"/api/Proovedor/{IdProovedor}", content);
+            Debug.WriteLine(content);
+            Debug.WriteLine(response);
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Proovedor proovedor2 = JsonConvert.DeserializeObject<Proovedor>(json_response);
+                return proovedor2;
+            }
+            return new Proovedor();
         }
     }
 }

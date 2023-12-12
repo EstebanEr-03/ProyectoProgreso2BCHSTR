@@ -1,4 +1,4 @@
-namespace BochaStoreProyecto.Maui.Views.Producto;
+    namespace BochaStoreProyecto.Maui.Views.Producto;
 using BochaStoreProyecto.Maui.Services;
 
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -43,22 +43,6 @@ public partial class NuevoProducto : ContentPage
             _producto.idProovedor = Int32.Parse(EntryidProovedor.Text);
             _producto.fechaCreacion = DateTime.Now;
             await _APIService.PutProducto(_producto.idProducto, _producto);
-
-            /*            Producto productoNuevo = new Producto
-                        {
-
-                            IdProducto = _producto.IdProducto,
-                            Nombre = EntryNombre.Text,
-                            Descripcion = EntryDescripcion.Text,
-                            Cantidad = Int32.Parse(Entrycantidad.Text),
-                            ImagenProductoURL = EntryImagenProductoURL.Text,
-                            Precio=double.Parse(EntryPrecio.Text),
-                            IdMarca=Int32.Parse(EntryIdMarca.Text),
-                            IdCategoria=Int32.Parse(EntryIdCategoria.Text),
-
-                        };*/
-
-
         }
         else
         {

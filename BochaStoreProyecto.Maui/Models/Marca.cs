@@ -8,7 +8,7 @@ namespace BochaStoreProyecto.Maui.Models
 {
     public class Marca
     {
-        public int IdMarca { get; set; }
-        public string Nombre { get; set; }
+        public int idMarca { get; set; }
+        public string nombreMarca { get; set; }
     }
 }

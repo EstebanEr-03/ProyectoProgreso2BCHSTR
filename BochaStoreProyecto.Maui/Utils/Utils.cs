@@ -13,5 +13,6 @@ namespace BochaStoreProyecto.Maui.Utils
         static public APIService apiservice = new APIService();
 
         public static List<Producto> ProductosList = new List<Producto>(){};
+        public static List<Proovedor> ProovedoresList = new List<Proovedor>(){};
     }
 }
