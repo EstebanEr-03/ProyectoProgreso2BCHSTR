@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BochaStoreProyecto.Maui.Views.Producto.NuevoProducto"
+             Title="NuevoProducto">
+    <VerticalStackLayout>
+        <TableView >
+            <TableRoot>
+                <TableSection Title="Ingrese un nuevo producto">
+                    <EntryCell x:Name="EntryNombre"
+                               Placeholder="Nombre"/>
+                    <EntryCell x:Name="EntryDescripcion"
+                               Placeholder="Descripción"/>
+                    <EntryCell x:Name="Entrycantidad"
+                               Placeholder="Cantidad"/>
+                    <EntryCell x:Name="EntryImagenProductoURL"
+                               Placeholder="ImagenProductoURL"/>
+                    <EntryCell x:Name="EntryPrecio"
+                               Placeholder="Precio"/>
+                    <EntryCell x:Name="EntryIdMarca"
+                               Placeholder="IdMarca"/>
+                    <EntryCell x:Name="EntryIdCategoria"
+                               Placeholder="IdCategoria"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="Guardar Producto"
+                FontSize="15"
+                Margin="5"
+                Clicked="OnClickGuardarNuevoProducto"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

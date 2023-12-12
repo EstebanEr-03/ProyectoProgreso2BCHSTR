@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BochaStoreProyecto.Maui.Views.Producto.ProductoPage"
+             Title="BOCHA STORE">
+    <VerticalStackLayout>
+
+        <HorizontalStackLayout
+            HorizontalOptions="FillAndExpand"
+            BackgroundColor="#0e0f14">
+            <Image Source="logo_bochas.jpeg"
+                   HeightRequest="50"
+                   WidthRequest="50"
+                   />
+            <Label x:Name="Username" 
+                   Text="Productos"
+                   FontSize="30"
+                   TextColor="White"/>
+        </HorizontalStackLayout>
+        <Button Text="Nuevo Producto"
+                FontSize="15"
+                BackgroundColor="#0e0f14"
+                BorderColor="White"
+                Clicked="OnClickNuevoProducto"
+                Margin="5"/>
+        <ListView x:Name="listaProductos"
+                  RowHeight="80"
+                  ItemSelected="OnClickShowDetails_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="dotnet_bot.png"
+                                   HeightRequest="70"
+                                   WidthRequest="70"/>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Nombre}"
+                                   FontSize="25"
+                                   WidthRequest="300"/>
+                                <Label Text="{Binding Descripcion}"
+                                   FontSize="20"/>
+                                <Label Text="{Binding Cantidad}"
+                                   FontSize="20"/>
+                                <Label Text="{Binding Precio}"
+                                   FontSize="20"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
