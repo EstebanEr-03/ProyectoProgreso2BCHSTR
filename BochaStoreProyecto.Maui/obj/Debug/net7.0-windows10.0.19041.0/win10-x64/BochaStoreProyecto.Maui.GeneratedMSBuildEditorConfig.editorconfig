@@ -60,6 +60,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = BochaStoreProyecto.Maui.Vi
 build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
 
+[C:/Users/esteb/Downloads/Proyecto/ProyectoConAPIE/BochaStoreProyecto.Maui/Views/Marca/DetailsMarca.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BochaStoreProyecto.Maui.Views.Marca.DetailsMarca.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Marca\DetailsMarca.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Marca\DetailsMarca.xaml
+
+[C:/Users/esteb/Downloads/Proyecto/ProyectoConAPIE/BochaStoreProyecto.Maui/Views/Marca/MarcaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BochaStoreProyecto.Maui.Views.Marca.MarcaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Marca\MarcaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Marca\MarcaPage.xaml
+
+[C:/Users/esteb/Downloads/Proyecto/ProyectoConAPIE/BochaStoreProyecto.Maui/Views/Marca/NuevaMarca.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BochaStoreProyecto.Maui.Views.Marca.NuevaMarca.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Marca\NuevaMarca.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Marca\NuevaMarca.xaml
+
 [C:/Users/esteb/Downloads/Proyecto/ProyectoConAPIE/BochaStoreProyecto.Maui/Views/Producto/DetailsProducto.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BochaStoreProyecto.Maui.Views.Producto.DetailsProducto.xaml

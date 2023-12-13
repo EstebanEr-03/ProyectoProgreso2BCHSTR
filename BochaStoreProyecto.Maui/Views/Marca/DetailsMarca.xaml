@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BochaStoreProyecto.Maui.Views.Marca.DetailsMarca"
+             Title="DetailsMarca">
+    <VerticalStackLayout>
+        <Image Source="dotnet_bot.png"
+               HorizontalOptions="Center"
+               HeightRequest="200"/>
+        <Label x:Name="Nombre"
+               Text="Nombre"
+               FontSize="32"
+               HorizontalOptions="Center"/>
+        <StackLayout Orientation="Horizontal">
+            <Button 
+                x:Name="Borrar"
+                Text="Borrar"
+                Clicked="Borrar_Clicked"
+                FontSize="20"
+                Margin="5"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="Red"/>
+            <Button 
+                x:Name="Editar"
+                Text="Editar"
+                Clicked="Editar_Clicked"
+                FontSize="20"
+                Margin="5"
+                HorizontalOptions="FillAndExpand"
+                TextColor="Black"
+                BackgroundColor="GreenYellow"/>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:BochaStoreProyecto.Maui.Views.Producto"
              xmlns:local1="clr-namespace:BochaStoreProyecto.Maui.Models"
+             xmlns:local2="clr-namespace:BochaStoreProyecto.Maui.Views.Proovedor"
+             xmlns:local3="clr-namespace:BochaStoreProyecto.Maui.Views.Marca"
              x:Class="BochaStoreProyecto.Maui.Views.FlyoutMenuPage"
              Padding="0,40,0,0"
              Title="FlyoutMenuPage">
@@ -14,6 +16,12 @@
                 <local1:FlyoutPageItem Title="Productos"
                                       IconSource="dotnet_bot.svg"
                                       TargetType="{x:Type local:ProductoPage}" />
+                <local1:FlyoutPageItem Title="Proovedores"
+                                      IconSource="dotnet_bot.svg"
+                                      TargetType="{x:Type local2:ProovedorPage}" />
+                <local1:FlyoutPageItem Title="Marcas"
+                                      IconSource="dotnet_bot.svg"
+                                      TargetType="{x:Type local3:MarcaPage}" />
             </x:Array>
         </CollectionView.ItemsSource>
         <CollectionView.ItemTemplate>

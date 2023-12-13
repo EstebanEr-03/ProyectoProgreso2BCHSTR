@@ -17,6 +17,8 @@
                                Placeholder="Stock"/>
                     <EntryCell x:Name="EntryidProovedor"
                                Placeholder="idProovedor"/>
+                    <EntryCell x:Name="EntryidMarca"
+                               Placeholder="idMarca"/>
                     <EntryCell x:Name="EntryfechaCreacion"
                                Placeholder="fechaCreacion"/>
                 </TableSection>

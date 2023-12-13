@@ -26,5 +26,14 @@ namespace BochaStoreProyecto.Maui.Services
         public Task<Proovedor> PutProovedor(int IdProovedor, Proovedor proovedor);
         public Task<Boolean> DeleteProovedor(int IdProovedor);
 
+        //Marca
+
+        public Task<List<Marca>> GetMarca();
+
+        public Task<Marca> GetMarca(int id);
+        public Task<Marca> PostMarca(Marca marca);
+        public Task<Marca> PutMarca(int IdMarca, Marca marca);
+        public Task<Boolean> DeleteMarca(int IdMarca);
+
     }
 }

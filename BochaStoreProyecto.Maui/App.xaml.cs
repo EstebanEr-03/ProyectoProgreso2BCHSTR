@@ -11,8 +11,8 @@ namespace BochaStoreProyecto.Maui
             InitializeComponent();
             APIService apiservice = new APIService();
             //MainPage = new NavigationPage(new LoginPage(apiservice));
-            //MainPage = new FlyoutPageT(apiservice);
-            MainPage = new NavigationPage(new ProovedorPage(apiservice));
+            MainPage = new FlyoutPageT(apiservice);
+            //MainPage = new NavigationPage(new ProovedorPage(apiservice));
         }
     }
 }

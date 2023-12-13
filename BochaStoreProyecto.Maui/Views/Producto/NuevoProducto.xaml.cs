@@ -26,6 +26,7 @@ public partial class NuevoProducto : ContentPage
             EntryPrecio.Text = _producto.precio.ToString();
             Entrystock.Text = _producto.stock.ToString();
             EntryidProovedor.Text = _producto.idProovedor.ToString();
+            EntryidMarca.Text = _producto.idMarca.ToString();
             EntryfechaCreacion.Text = _producto.fechaCreacion.ToString();
 
         }
@@ -41,6 +42,7 @@ public partial class NuevoProducto : ContentPage
             _producto.precio = double.Parse(EntryPrecio.Text);
             _producto.stock = Int32.Parse(Entrystock.Text);
             _producto.idProovedor = Int32.Parse(EntryidProovedor.Text);
+            _producto.idMarca = Int32.Parse(EntryidMarca.Text);
             _producto.fechaCreacion = DateTime.Now;
             await _APIService.PutProducto(_producto.idProducto, _producto);
         }
@@ -56,6 +58,7 @@ public partial class NuevoProducto : ContentPage
                 precio = double.Parse(EntryPrecio.Text),
                 stock = Int32.Parse(Entrystock.Text),
                 idProovedor= Int32.Parse(EntryidProovedor.Text),
+                idMarca= Int32.Parse(EntryidMarca.Text),
                 fechaCreacion = DateTime.Now
             };
             //Utils.Utils.ProductosList.Add(producto);

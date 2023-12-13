@@ -21,6 +21,8 @@ public partial class DetailsProducto : ContentPage
         Descripcion.Text = _producto.descripcionProducto;
         Precio.Text = _producto.precio.ToString();
         Stock.Text = _producto.stock.ToString();
+        idMarca.Text = _producto.idMarca.ToString();
+        idProovedor.Text = _producto.idProovedor.ToString();
         fechaCreacion.Text = _producto.fechaCreacion.ToString();
     }
     private async void Borrar_Clicked(object sender, EventArgs e)

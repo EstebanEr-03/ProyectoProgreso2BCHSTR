@@ -10,6 +10,7 @@ namespace BochaStoreProyecto.Maui.Models
     {
         public int idProducto { get; set; }
         public int idProovedor { get; set; }
+        public int idMarca { get; set; }
         public string nombreProducto { get; set; }
         public string descripcionProducto { get; set; }
         public double precio { get; set; }

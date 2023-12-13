@@ -33,6 +33,20 @@
                     FontSize="18"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
+            <Label Text="idProovedor: "
+                    FontSize="18"/>
+            <Label x:Name="idProovedor"
+                    Text="idProovedor"
+                    FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="idMarca: "
+                    FontSize="18"/>
+            <Label x:Name="idMarca"
+                    Text="idMarca"
+                    FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
             <Label Text="fechaCreacion: "
                     FontSize="18"/>
             <Label x:Name="fechaCreacion"

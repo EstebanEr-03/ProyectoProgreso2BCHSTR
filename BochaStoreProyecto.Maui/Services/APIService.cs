@@ -173,5 +173,70 @@ namespace BochaStoreProyecto.Maui.Services
             }
             return new Proovedor();
         }
+
+        // M A R C A
+
+        public async Task<bool> DeleteMarca(int IdMara)
+        {
+            var response = await _httpClient.DeleteAsync($"/api/Marca/{IdMara}");
+            if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<Marca> GetMarca(int IdMarca)
+        {
+            var response = await _httpClient.GetAsync($"/api/Marca/{IdMarca}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Marca marca = JsonConvert.DeserializeObject<Marca>(json_response);
+                return marca;
+            }
+            return new Marca();
+        }
+
+        public async Task<List<Marca>> GetMarca()
+        {
+            var response = await _httpClient.GetAsync("/api/Marca");
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                List<Marca> marca = JsonConvert.DeserializeObject<List<Marca>>(json_response);
+                return marca;
+            }
+            return new List<Marca>();
+
+        }
+
+        public async Task<Marca> PostMarca(Marca marca)
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(marca), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("/api/Marca/", content);
+            //Debug.WriteLine(content);
+            //Debug.WriteLine(response);
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Marca marca2 = JsonConvert.DeserializeObject<Marca>(json_response);
+                return marca2;
+            }
+            return new Marca();
+        }
+
+        public async Task<Marca> PutMarca(int IdMarca, Marca marca)
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(marca), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync($"/api/Marca/{IdMarca}", content);
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Marca marca2 = JsonConvert.DeserializeObject<Marca>(json_response);
+                return marca2;
+            }
+            return new Marca();
+        }
     }
 }
