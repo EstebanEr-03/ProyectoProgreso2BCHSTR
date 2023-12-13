@@ -35,5 +35,12 @@ namespace BochaStoreProyecto.Maui.Services
         public Task<Marca> PutMarca(int IdMarca, Marca marca);
         public Task<Boolean> DeleteMarca(int IdMarca);
 
+        //Usuario
+        public Task<List<Usuario>> GetUsuario();
+
+        public Task<Usuario> GetUsuario(int id);
+        public Task<Usuario> PostMarca(Usuario usuario);
+        public Task<Usuario> Login(string userName, string password);
+
     }
 }

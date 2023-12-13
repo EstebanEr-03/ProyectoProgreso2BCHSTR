@@ -14,28 +14,23 @@ public partial class LoginPage : ContentPage
         _APIService = apiservice;
     }
 
-    private async void Login_Clicked(object sender, EventArgs e)
+    private  async void Login_Clicked(object sender, EventArgs e)
     {
-        string username = Username.Text;
-        string password = Password.Text;
-        Usuario usuario = new Usuario
+        string userName = txtUserName.Text;
+        string password = txtPassword.Text;
+        if(userName == null || password == null)
         {
-            idUsuario = 0,
-            username = username,
-            password = password
-        };
-
-        Usuario usuario2 = _APIService.PostUsuario(usuario);
-        if (usuario2 != null)
+            await DisplayAlert("Peligro", "Ingrese el usuario y la contraseña", "Ok");
+            return;
+        }
+        Usuario usuario = await _APIService.Login(userName, password);
+        if (usuario != null) 
         {
-            Preferences.Set("username", username);
-            Preferences.Set("idusuario", usuario2.idUsuario);
-            await Navigation.PushAsync(new FlyoutPageT(_APIService));
+            await Navigation.PushAsync(new NavigationPage(new FlyoutPageT(_APIService)));
         }
         else
         {
-            var toast = Toast.Make("Nombre de usuario o password incorrecto", CommunityToolkit.Maui.Core.ToastDuration.Short, 14);
-            await toast.Show();
+            await DisplayAlert("Warning", "Username or Password is incorrect", "Ok");
         }
     }
 }

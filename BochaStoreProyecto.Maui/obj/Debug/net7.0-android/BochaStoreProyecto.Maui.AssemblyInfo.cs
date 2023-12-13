@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BochaStoreProyecto.Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b0530f35d2740b2fcbde6c9f195baf6592bbeac0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f74c5412b1dc9c03e247b6e4987f8c4ce8b964e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BochaStoreProyecto.Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BochaStoreProyecto.Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

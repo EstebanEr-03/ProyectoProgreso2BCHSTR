@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IAtFbXx1gdTPAf5CHpWWmEP+uDikMrz8qWuILXwHCyQVO41frkbDde2Zw7mlzBvx5r4ENlEZ9uNtHj6f3i2Gjw==",
+  "dgSpecHash": "TQ5rZNH/F6FhUbBz2pK1MasxN3a3UwefcJDeoEH2mDRiw+FZ/MWOx7sCkVCLWX32ICwOxMRPJdja6YSxyjnoKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoConAPIE\\BochaStoreProyecto.Maui\\BochaStoreProyecto.Maui.csproj",
+  "projectFilePath": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoBochaCopia\\BochaStoreProyecto.Maui\\BochaStoreProyecto.Maui.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\esteb\\.nuget\\packages\\communitytoolkit.maui\\6.1.0\\communitytoolkit.maui.6.1.0.nupkg.sha512",
     "C:\\Users\\esteb\\.nuget\\packages\\communitytoolkit.maui.core\\6.1.0\\communitytoolkit.maui.core.6.1.0.nupkg.sha512",

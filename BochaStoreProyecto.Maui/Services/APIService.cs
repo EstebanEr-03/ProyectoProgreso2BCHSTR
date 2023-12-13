@@ -238,5 +238,49 @@ namespace BochaStoreProyecto.Maui.Services
             }
             return new Marca();
         }
+        // U S U A R I O
+
+        public async Task<Usuario> Login(string userName, string password)
+        {
+            var userInfo = new List<Usuario>();
+
+            // Reutiliza el HttpClient ya creado en la clase APIService
+            var client = _httpClient;
+
+            string url = $"/api/Usuarios/{userName}/{password}";
+
+            // Utiliza el método GetAsync con la URL construida
+            HttpResponseMessage response = await client.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string content = await response.Content.ReadAsStringAsync();
+                userInfo = JsonConvert.DeserializeObject<List<Usuario>>(content);
+                return userInfo.FirstOrDefault();
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /*public async Task<Usuario> Login(string userName, string password)
+        {
+            var userInfo = new List<Usuario>();
+            var client = new HttpClient();
+            string url = "http://10.0.2.2:5149/api/Usuarios/"+userName+"/"+password;
+            client.BaseAddress = new Uri(url);
+            HttpResponseMessage response = await client.GetAsync("");
+            if (response.IsSuccessStatusCode)
+            {
+                string content = response.Content.ReadAsStringAsync().Result;
+                userInfo = JsonConvert.DeserializeObject<List<Usuario>>(content);
+                return await Task.FromResult(userInfo.FirstOrDefault());
+            }
+            else 
+            {
+                return null;
+            }
+        }*/
     }
 }

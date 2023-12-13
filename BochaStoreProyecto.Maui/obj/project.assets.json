@@ -25992,11 +25992,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoConAPIE\\BochaStoreProyecto.Maui\\BochaStoreProyecto.Maui.csproj",
+      "projectUniqueName": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoBochaCopia\\BochaStoreProyecto.Maui\\BochaStoreProyecto.Maui.csproj",
       "projectName": "BochaStoreProyecto.Maui",
-      "projectPath": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoConAPIE\\BochaStoreProyecto.Maui\\BochaStoreProyecto.Maui.csproj",
+      "projectPath": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoBochaCopia\\BochaStoreProyecto.Maui\\BochaStoreProyecto.Maui.csproj",
       "packagesPath": "C:\\Users\\esteb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoConAPIE\\BochaStoreProyecto.Maui\\obj\\",
+      "outputPath": "C:\\Users\\esteb\\Downloads\\Proyecto\\ProyectoBochaCopia\\BochaStoreProyecto.Maui\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

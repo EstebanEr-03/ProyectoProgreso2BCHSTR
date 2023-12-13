@@ -3,19 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BochaStoreProyecto.Maui.Views.LoginPage"
              Title="LoginPage">
-    <VerticalStackLayout>
-        <TableView>
-            <TableRoot>
-                <TableSection Title="Ingrese sus datos">
-                    <EntryCell x:Name="Username"
-                        Placeholder="Nombre de Usuario"/>
-                    <EntryCell x:Name="Password"
-                        Placeholder="Contraseña"/>
-                </TableSection>
-            </TableRoot>
-        </TableView>
-        <Button x:Name="Login" 
-                Text="Ingresar"
-                Clicked="Login_Clicked"/>
-    </VerticalStackLayout>
+    <StackLayout>
+        <Label Text="Welcome to .NET MAUI!"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+        
+        <Label Text="User Name:"></Label>
+        
+        <Entry x:Name="txtUserName"></Entry>
+        
+        <Label Text="Password: "></Label>
+        
+        <Entry x:Name="txtPassword"></Entry>
+        
+        <Button x:Name="btnLogin" Text="Login" Clicked="Login_Clicked"></Button>
+    </StackLayout>
 </ContentPage>
