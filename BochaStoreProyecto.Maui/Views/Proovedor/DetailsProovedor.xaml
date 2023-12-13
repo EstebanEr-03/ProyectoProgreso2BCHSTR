@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BochaStoreProyecto.Maui.Views.Proovedor.DetailsProovedor"
-             Title="DetailsProovedor">
+             Title="Detalle Proveedors">
     <VerticalStackLayout>
         <Image Source="dotnet_bot.png"
                HorizontalOptions="Center"

@@ -18,6 +18,7 @@ public partial class DetailsMarca : ContentPage
         base.OnAppearing();
         _marca = BindingContext as Marca;
         Nombre.Text = _marca.nombreMarca;
+        Id.Text = "Id: "+_marca.idMarca.ToString();
     }
     private async void Borrar_Clicked(object sender, EventArgs e)
     {
