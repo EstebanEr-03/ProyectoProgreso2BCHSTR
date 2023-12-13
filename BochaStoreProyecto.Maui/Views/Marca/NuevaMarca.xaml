@@ -3,19 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BochaStoreProyecto.Maui.Views.Marca.NuevaMarca"
              Title="Nueva Marca">
-    <VerticalStackLayout>
-        <TableView >
-            <TableRoot>
-                <TableSection Title="Ingrese una nueva Marca">
-                    <EntryCell x:Name="EntryNombre"
-                               Placeholder="Nombre"/>
-                </TableSection>
-            </TableRoot>
-        </TableView>
+    <StackLayout Padding="20" Spacing="10">
+        <Entry Placeholder="Ingresar Marca"
+               x:Name="EntryNombre"
+               FontSize="18"
+               BackgroundColor="#ecf0f1"
+               PlaceholderColor="#bdc3c7"
+               Margin="0,0,0,10"/>
+        
         <Button Text="Guardar Marca"
-                FontSize="15"
-                Margin="5"
-                Clicked="OnClickGuardarNuevaMarca"/>
+                FontSize="20"
+                BackgroundColor="#3498db"
+                TextColor="White"
+                Clicked="OnClickGuardarNuevaMarca"
+                CornerRadius="5"
+                HeightRequest="50"/>
 
-    </VerticalStackLayout>
+    </StackLayout>
 </ContentPage>

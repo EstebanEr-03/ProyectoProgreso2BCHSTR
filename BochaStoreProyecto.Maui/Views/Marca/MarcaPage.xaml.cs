@@ -20,7 +20,7 @@ public partial class MarcaPage : ContentPage
     {
         base.OnAppearing();
 
-        string username = Preferences.Get("username", "0");
+        string username = "BOCHASTORE";
         Username.Text = username;
         List<Marca> ListaMarcas = await _APIService.GetMarca();
         marcas = new ObservableCollection<Marca>(ListaMarcas);

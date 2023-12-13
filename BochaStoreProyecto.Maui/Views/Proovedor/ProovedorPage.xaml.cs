@@ -20,15 +20,15 @@ public partial class ProovedorPage : ContentPage
     {
         base.OnAppearing();
 
-        string username = Preferences.Get("username", "0");
+        string username = "BOCHASTORE";
         Username.Text = username;
         List<Proovedor> ListaProovedores = await _APIService.GetProovedor();
         proovedores = new ObservableCollection<Proovedor>(ListaProovedores);
-        listaProovedores.ItemsSource = proovedores;
+        listaProveedores.ItemsSource = proovedores;
 
     }
 
-    private async void OnClickNuevoPovedor(object sender, EventArgs e)
+    private async void OnClickNuevoProveedor(object sender, EventArgs e)
     {
         var toast = Toast.Make("On Click Boton Nuevo Producto", ToastDuration.Short, 14);
         await toast.Show();

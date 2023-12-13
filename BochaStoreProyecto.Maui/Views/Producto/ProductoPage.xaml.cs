@@ -20,7 +20,7 @@ public partial class ProductoPage : ContentPage
     {
         base.OnAppearing();
 
-        string username = Preferences.Get("username", "0");
+        string username = "BOCHASTORE";
         Username.Text = username;
         List<Producto> ListaProducts = await _APIService.GetProductos();
         products = new ObservableCollection<Producto>(ListaProducts);
