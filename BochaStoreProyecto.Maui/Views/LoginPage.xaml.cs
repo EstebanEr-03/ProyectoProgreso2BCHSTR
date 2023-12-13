@@ -26,8 +26,6 @@ public partial class LoginPage : ContentPage
         Usuario usuario = await _APIService.Login(userName, password);
         if (usuario != null) 
         {
-            Preferences.Set("username", userName);
-            Preferences.Set("idusuario", usuario.idUsuario);
             await Navigation.PushAsync(new NavigationPage(new FlyoutPageT(_APIService)));
         }
         else

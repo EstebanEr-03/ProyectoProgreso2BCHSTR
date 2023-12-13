@@ -4,7 +4,7 @@
              x:Class="BochaStoreProyecto.Maui.Views.Marca.DetailsMarca"
              Title="Detalle Marca">
     <StackLayout Padding="20" Spacing="10">
-        <Image Source="dotnet_bot.png"
+        <Image Source="marca_bocha.png"
                HorizontalOptions="Center"
                HeightRequest="200"
                Aspect="AspectFit"/>

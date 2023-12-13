@@ -11,7 +11,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Image Source="logo_bochas.jpeg"
+                <Image Source="proveedor_bocha.png"
                        HeightRequest="50"
                        WidthRequest="50"
                        VerticalOptions="CenterAndExpand"/>
@@ -44,7 +44,7 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="dotnet_bot.png"
+                                <Image Source="proveedor_bocha.png"
                                        HeightRequest="70"
                                        WidthRequest="70"
                                        VerticalOptions="CenterAndExpand"/>

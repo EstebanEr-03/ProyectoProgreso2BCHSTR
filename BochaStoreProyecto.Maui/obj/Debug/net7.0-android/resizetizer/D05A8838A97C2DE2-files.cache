@@ -1,4 +1,7 @@
-﻿obj\Debug\net7.0-android\resizetizer\r\drawable\logo_bochas.jpeg
+﻿obj\Debug\net7.0-android\resizetizer\r\drawable\icono_producto.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\logo_bochas.jpeg
+obj\Debug\net7.0-android\resizetizer\r\drawable\marca_bocha.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\proveedor_bocha.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\splash.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png

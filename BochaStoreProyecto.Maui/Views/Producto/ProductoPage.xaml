@@ -44,7 +44,7 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="dotnet_bot.png"
+                                <Image Source="icono_producto.png"
                                        HeightRequest="70"
                                        WidthRequest="70"
                                        VerticalOptions="CenterAndExpand"/>

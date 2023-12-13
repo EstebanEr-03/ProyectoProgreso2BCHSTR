@@ -5035,3 +5035,6 @@ C:\Users\esteb\Downloads\Proyecto\ProyectoBochaCopia\BochaStoreProyecto.Maui\obj
 C:\Users\esteb\Downloads\Proyecto\ProyectoBochaCopia\BochaStoreProyecto.Maui\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\esteb\Downloads\Proyecto\ProyectoBochaCopia\BochaStoreProyecto.Maui\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\esteb\Downloads\Proyecto\ProyectoBochaCopia\BochaStoreProyecto.Maui\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\esteb\Downloads\Proyecto\ProyectoBochaCopia\BochaStoreProyecto.Maui\obj\Debug\net7.0-android\resizetizer\r\drawable\icono_producto.png
+C:\Users\esteb\Downloads\Proyecto\ProyectoBochaCopia\BochaStoreProyecto.Maui\obj\Debug\net7.0-android\resizetizer\r\drawable\marca_bocha.png
+C:\Users\esteb\Downloads\Proyecto\ProyectoBochaCopia\BochaStoreProyecto.Maui\obj\Debug\net7.0-android\resizetizer\r\drawable\proveedor_bocha.png

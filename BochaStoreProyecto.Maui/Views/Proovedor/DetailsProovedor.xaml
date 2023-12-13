@@ -4,7 +4,7 @@
              x:Class="BochaStoreProyecto.Maui.Views.Proovedor.DetailsProovedor"
              Title="Detalle Proveedor">
     <StackLayout Padding="20" Spacing="10">
-        <Image Source="dotnet_bot.png"
+        <Image Source="proveedor_bocha.png"
                HorizontalOptions="Center"
                HeightRequest="200"
                Aspect="AspectFit"/>

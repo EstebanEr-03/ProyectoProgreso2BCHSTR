@@ -14,13 +14,13 @@
         <CollectionView.ItemsSource>
             <x:Array Type="{x:Type local1:FlyoutPageItem}">
                 <local1:FlyoutPageItem Title="Productos"
-                                      IconSource="dotnet_bot.svg"
+                                      IconSource="icono_producto.png"
                                       TargetType="{x:Type local:ProductoPage}" />
                 <local1:FlyoutPageItem Title="Proovedores"
-                                      IconSource="dotnet_bot.svg"
+                                      IconSource="proveedor_bocha.png"
                                       TargetType="{x:Type local2:ProovedorPage}" />
                 <local1:FlyoutPageItem Title="Marcas"
-                                      IconSource="dotnet_bot.svg"
+                                      IconSource="marca_bocha.png"
                                       TargetType="{x:Type local3:MarcaPage}" />
             </x:Array>
         </CollectionView.ItemsSource>
